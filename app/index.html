@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/css/freelancer.css">
+    <link rel="stylesheet" href="client/components/search/css/menu.css">
+    <!-- endbuild -->
+
+    <!-- build:libcss -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/flickity/css/flickity.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css" />
+    <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-default.css" />
+    <link rel="stylesheet" href="bower_components/ng-scrollbar/dist/ng-scrollbar.css" />
+    <link rel="stylesheet" href="bower_components/Bootflat/bootflat/css/bootflat.css" />
+    <link rel="stylesheet" href="bower_components/Bootflat/bootflat/css/bootflat.min.css" />
+    <!-- endbower -->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">-->
+    <!-- endbuild -->
+
+</head>
+
+<body ng-app="app">
+    <div ui-view="root"></div>
+
+    <!-- build:lib -->
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <script src="bower_components/angular/angular.js"></script>
+
+    <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular-loader/angular-loader.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+    <script src="bower_components/get-size/get-size.js"></script>
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/eventie/eventie.js"></script>
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+    <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/unipointer/unipointer.js"></script>
+    <script src="bower_components/unidragger/unidragger.js"></script>
+    <script src="bower_components/fizzy-ui-utils/utils.js"></script>
+    <script src="bower_components/tap-listener/tap-listener.js"></script>
+    <script src="bower_components/flickity/js/index.js"></script>
+    <script src="bower_components/fitvids/jquery.fitvids.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="bower_components/ui-router-extras/release/ct-ui-router-extras.js"></script>
+    <script src="bower_components/sockjs-client/dist/sockjs.js"></script>
+    <script src="bower_components/stomp-websocket/lib/stomp.min.js"></script>
+    <script src="bower_components/ngDialog/js/ngDialog.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/nginfinitescroll/build/ng-infinite-scroll.js"></script>
+    <script src="bower_components/angular-load/angular-load.js"></script>
+    <script src="bower_components/ng-scrollbar/dist/ng-scrollbar.js"></script>
+    <script src="bower_components/Bootflat/bootflat/js/icheck.min.js"></script>
+    <script src="bower_components/Bootflat/bootflat/js/jquery.fs.selecter.min.js"></script>
+    <script src="bower_components/Bootflat/bootflat/js/jquery.fs.stepper.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:app -->
+    <script src="app.js"></script>
+    <!-- inject:js -->
+    <script src="client/app.module.js"></script>
+    <script src="client/app.routes.js"></script>
+    <script src="client/components/home/home.routes.js"></script>
+    <script src="client/components/create.join/create.join.routes.js"></script>
+    <script src="client/components/room/room.routes.js"></script>
+    <script src="client/components/web.sockets/restService.js"></script>
+    <script src="client/components/web.sockets/stompClientService.js"></script>
+    <script src="client/components/web.sockets/userService.js"></script>
+    <script src="client/components/web.sockets/webSocketService.js"></script>
+    <script src="client/shared/utilities/anchorSmoothScroll.js"></script>
+    <script src="client/components/version/interpolate-filter.js"></script>
+    <script src="client/components/version/interpolate-filter_test.js"></script>
+    <script src="client/components/version/version-directive.js"></script>
+    <script src="client/components/version/version-directive_test.js"></script>
+    <script src="client/components/version/version.js"></script>
+    <script src="client/components/version/version_test.js"></script>
+    <script src="client/components/create.join/directives/createRoomDirective.js"></script>
+    <script src="client/components/create.join/directives/joinRoomDirective.js"></script>
+    <script src="client/components/player/services/playerService.js"></script>
+    <script src="client/components/room/controllers/roomController.js"></script>
+    <script src="client/components/room/services/durationService.js"></script>
+    <script src="client/components/room/services/googleApiService.js"></script>
+    <script src="client/components/search/controllers/menuController.js"></script>
+    <script src="client/components/search/controllers/searchController.js"></script>
+    <script src="client/components/search/directives/menuDirective.js"></script>
+    <script src="client/components/queue/controllers/queueController.js"></script>
+    <script src="client/components/queue/directives/queueDirective.js"></script>
+    <script src="client/components/player/directives/youTubeDirective.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <!-- build:js -->
+    <script src="assets/js/scripts.js"></script>
+    <!-- endbuild -->
+
+    <script src="https://apis.google.com/js/client.js?onload=setApiKey"></script>
+    <!--<script src="https://apis.google.com/js/client.js"></script>-->
+    <!--<script src="https://www.youtube.com/iframe_api"></script>-->
+</body>
+
+</html>
